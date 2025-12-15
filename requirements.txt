@@ -1,3 +1,8 @@
+streamlit
 pandas
-scipy==1.6.2
-streamlit==1.12.2
+numpy
+
+# ESSENCIAIS PARA BUILD
+setuptools>=65.0
+wheel
+pip>=23.0
