@@ -1,8 +1,0 @@
-streamlit
-pandas
-numpy
-
-# ESSENCIAIS PARA BUILD
-setuptools>=65.0
-wheel
-pip>=23.0
