@@ -12,7 +12,22 @@ if hist_button: # se o botão for clicado
     st.write('Criando um histograma para o conjunto de dados de anúncios de vendas de carros')
     
     # criar um histograma
-    fig = px.histogram(car_data, x="odometer")
+    hist_fig = px.histogram(
+        car_data,
+        x="odometer",
+        title="Distribuição da Quilometragem"
+    )
+
+    st.plotly_chart(hist_fig, use_container_width=True)
+    
+    #criar gráfico de dispersão
+    hist_fig = px.histogram(
+        car_data,
+        x="odometer",
+        title="Distribuição da Quilometragem"
+    )
+
+    st.plotly_chart(hist_fig, use_container_width=True)
 
     # exibir um gráfico Plotly interativo
     st.plotly_chart(fig, use_container_width=True)
