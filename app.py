@@ -22,7 +22,7 @@ if hist_button: # se o botão for clicado
 
     st.plotly_chart(hist_fig, use_container_width=True)
 
- if dist_button: # se o botão for clicado
+if dist_button: # se o botão for clicado
     # escrever uma mensagem
     st.write('Criando um gráfico de dispersão')
     
